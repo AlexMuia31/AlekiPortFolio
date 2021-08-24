@@ -1,4 +1,4 @@
-import { Stack, HStack, VStack, Flex, Heading, IconButton, Spacer } from "@chakra-ui/react";
+import { VStack, Flex, Heading, IconButton, Spacer } from "@chakra-ui/react";
 import { FaSun, FaMoon, FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { useColorMode } from "@chakra-ui/color-mode";
 import Header from './components/Header';
@@ -23,10 +23,11 @@ function App() {
         <IconButton ml={2} icon={<FaLinkedin />} isRound='true' />
         <IconButton ml={2} icon={<FaGithub />} isRound='true' />
         <IconButton ml={8} icon={isDark ? <FaMoon /> : <FaSun />} isRound='true' onClick={toggleColorMode} />
-        <Header />
-        <Social />
-        <Profile />
+
       </Flex>
+      <Header />
+      <Social />
+      <Profile />
     </VStack>
 
 
